@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: FLORLRG_
+font link: https://www.fontsquirrel.com/fonts/Florante-at-Laura
+font author: Nyek!
+font author site: 
+Slogan Font: Fanwood Text.otf
+
+icon designer: Larisa Skosyrska
+icon designer link: /Lara.Skosyrska
+        
+{"bg":"#F6F2EE","icon-gradient-0":"#5F2517","icon-gradient-1":"#FFEDB5","font":"#35291E","slogan":"#493d32"}
+      

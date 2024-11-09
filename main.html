@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legacy Shopping</title>
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <div class="generaldiv">
+       <nav
+        class="navbar navbar-expand-sm navbar-light"
+       >
+        <div class="container">
+            <a class="navbar-brand" href="main.html">L<span class="legacy">egacy</span></a>
+            <button
+                class="navbar-toggler d-lg-none"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId"
+                aria-controls="collapsibleNavId"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" aria-current="page"
+                            >Categories
+                            
+                            <span class="visually-hidden">(current)</span></a
+                        >
+                        
+                    </li>
+                </ul>
+                <form class="d-flex my-2 my-lg-0" id="form">
+                    <input
+                        class="form-control me-sm-2"
+                        type="text"
+                        placeholder="Search"
+                    />
+                    <button
+                        class="btn btn-outline-success my-2 my-sm-0"
+                        type="submit"
+                    >
+                        Search
+                    </button>
+                </form>
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="account.html" aria-current="page"><img src="images/user-removebg-preview.png" alt="" style="width: 25px; height: 25px;"> Account
+                            
+                            <span class="visually-hidden">(current)</span></a
+                        >
+                        
+                    </li>
+                </ul>
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="cart.html" aria-current="page"><img src="images/shopping-cart-removebg-preview.png" alt="" style="width: 25px; height: 25px;"> Cart
+                            
+                            <span class="visually-hidden">(current)</span></a
+                        >
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+       </nav>
+       
+
+       <div class="advert">
+       <div class="advertflexdiv">
+        <div class="advertdiv1">
+            <p>Grab Up to 50% Off On <br> Selected Headphone</p>
+            <br>
+            <button class="btn btn-success mx-3" onclick="headsets()">Buy Now</button>
+        </div>
+        <div class="advertdiv2">
+            <video autoplay loop style="width: 500px; height: 180px; margin-left: 100%; margin-top: -400px;">
+                <source src="images/Gen-2 4171491456, wearing headsetsjpg, M 5.mp4" type="video/mp4" style="width: 100px; height: 100px;">
+                </video>
+        </div>
+       </div>
+       </div>
+       <div style="display: flex; flex-direction: row; justify-content: space-between;">
+        <p style="color: white; margin-left: 50px; font-size: 30px; font-weight: bold; font-style: italic;">Phones For You::</p>
+        <p style="color: white; font-size: larger; font-weight: 700; margin-left: -10px; margin-top: 15px;" onclick="phones()">See All</p>
+        </div>
+       <div class="flex-div justify-content-center">
+        <div class="card">
+            <img class="card-img-top" src="images/phones/1__28_-removebg-preview.png" alt="Title" />
+            <div class="card-body">
+                <h5 class="card-title text-success">Tecno Pop 8 6.6 "3GB RAM"</h5>
+                <p class="card-text text-success" style="font-weight: 800;">Price : ₦94,465</p>
+                <button class="cart btn btn-success" onclick="Cart(0, 'Tecno Pop 8 ', 94465, 'phones/1__28_-removebg-preview.png')">Add To Cart</button>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img class="card-img-top" src="images/phones/1__30_-removebg-preview.png" alt="Title" />
+            <div class="card-body">
+                <h5 class="card-title text-success">Smart 8 Plus 6.6 "4GB RAM"</h5>
+                <p class="card-text text-success" style="font-weight: 800;">Price : ₦133,499</p>
+                <button class="cart btn btn-success"  onclick="Cart(1, 'Smart 8 Plus ', 133499, 'phones/1__30_-removebg-preview.png')">Add To Cart</button>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img class="card-img-top" src="images/phones/1__31_-removebg-preview.png" alt="Title" />
+            <div class="card-body">
+                <h5 class="card-title text-success">XIAOMI Redmi 12 6.79 "4GB RAM"</h5>
+                <p class="card-text text-success" style="font-weight: 800;">Price : ₦182,065</p>
+                <button class="btn btn-success" onclick="Cart(2, 'XIAOMI Redmi 12', 182065, 'phones/1__31_-removebg-preview.png')">Add To Cart</button>
+
+            </div>
+        </div>
+        
+        <div class="card">
+            <img class="card-img-top" src="images/phones/1__32_-removebg-preview.png" alt="Title" />
+            <div class="card-body">
+                <h5 class="card-title text-success">Samsung Galaxy A05 6.7 "4GB RAM"</h5>
+                <p class="card-text text-success" style="font-weight: 800;">Price : ₦118,000</p>
+                <button class="btn btn-success" onclick="Cart(3, 'Samsung Galaxy A05', 118000, 'phones/1__32_-removebg-preview.png')">Add To Cart</button>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card-img-top" src="images/phones/1__33_-removebg-preview.png" alt="Title" />
+            <div class="card-body">
+                <h5 class="card-title text-success">XIAOMI Redmi Note 13 6.67 "6GB RAM"</h5>
+                <p class="card-text text-success" style="font-weight: 800;">Price : ₦243,640</p>
+                <button class="btn btn-success" onclick="Cart(4, 'XIAOMI Redmi Note 13', 243640, 'phones/1__33_-removebg-preview.png' )">Add To Cart</button>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card-img-top" src="images/phones/1__34_-removebg-preview.png" alt="Title" />
+            <div class="card-body">
+                <h5 class="card-title text-success">XIAOMI Redmi 13C 6.74 "8GB RAM"</h5>
+                <p class="card-text text-success" style="font-weight: 800;">Price : ₦170,000</p>
+                <button class="btn btn-success" onclick="Cart(5, 'XIAOMI Redmi 13C', 170000, 'phones/1__34_-removebg-preview.png' )">Add To Cart</button>
+
+            </div>
+        </div>
+
+        </div>
+        <div style="display: flex; flex-direction: row; justify-content: space-between;">
+        <p style="color: white; margin-left: 50px; font-size: 30px; font-weight: bold; font-style: italic;">Home Appliances For You::</p>
+        <p style="color: white; font-size: larger; font-weight: 700; margin-left: -10px; margin-top: 15px;" onclick="homeappliances()">See All</p>
+        </div>
+        <div class="flex-div justify-content-center">
+            <div class="card">
+                <img class="card-img-top" src="images/home appliances/1 (16).jpg" alt="Title" />
+                <div class="card-body">
+                    <h5 class="card-title text-success">Saisho Stainless Steel Steam Iron </h5>
+                    <p class="card-text text-success" style="font-weight: 800;">Price :₦ 11,101</p>
+                    <button class="btn btn-success" onclick="Cart(6, 'Saisho Stainless Steel Steam Iron', 11101, 'home appliances/1 (16).jpg')">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img-top" src="images/home appliances/coffee-maker.webp" alt="Title" />
+                <div class="card-body">
+                    <h5 class="card-title text-success">Stainless Steel Coffee Machines Maker</h5>
+                    <p class="card-text text-success" style="font-weight: 800;">Price : ₦15,940</p>
+                    <button class="btn btn-success" onclick="Cart(7, 'Stainless Steel Coffee Machines Maker', 15940, 'home appliances/coffee-maker.webp')">Add To Cart</button>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img class="card-img-top" src="images/home appliances/vacuum-cleaners_300x400.png" alt="Title" />
+                <div class="card-body text-success">
+                    <h5 class="card-title text-success">Vaccum Cleaners</h5>
+                    <p class="card-text text-success" style="font-weight: 800;">Price:₦32,434</p>
+                    <button class="btn btn-success fw-bold" onclick="Cart(8, 'Vaccum Cleaners', 32434, 'home appliances/vacuum-cleaners_300x400.png' )">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img-top" src="images/home appliances/1 - 2024-04-13T044729.944.jpg" alt="Title" />
+                <div class="card-body">
+                    <h5 class="card-title text-success">Zyre 2 Slice Sandwich Maker (EL-216)</h5>
+                    <p class="card-text text-success" style="font-weight: 800;">Price :₦ 14,600</p>
+                    <button class="btn btn-success" onclick="Cart(9, 'Zyre 2 Slice Sandwich Maker', 14600, 'home appliances/1 - 2024-04-13T044729.944.jpg')">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img-top" src="images/home appliances/rice cookers.jpg" alt="Title" />
+                <div class="card-body">
+                    <h5 class="card-title text-success">Qasa Portable Rice Cooker QRC-250 (INVERTER FRIENDLY)</h5>
+                    <p class="card-text text-success" style="font-weight: 800;">Price :₦ 29,999</p>
+                    <button class="btn btn-success" onclick="Cart(10, 'Qasa Portable Rice Cooker', 29999, 'home appliances/rice cookers.jpg' )">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img-top" src="images/home appliances/air fryers.jpg" alt="Title" />
+                <div class="card-body">
+                    <h5 class="card-title text-success">Silver Crest 6.5L Extra Large Capacity Digital AirFryer</h5>
+                    <p class="card-text text-success" style="font-weight: 800;">₦ 40,900</p>
+                    <button class="btn btn-success" onclick="Cart(11, 'Silver Crest 6.5L Extra Large Capacity Digital AirFryer', 40900, 'home appliances/air fryers.jpg')">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction: row; justify-content: space-between;">
+            <p style="color: white; margin-left: 50px; font-size: 30px; font-weight: bold; font-style: italic;">Top Fashion Picks::</p>
+            <p style="color: white; font-size: larger; font-weight: 700; margin-left: -10px; margin-top: 15px;" onclick="Shoes()">See All</p>
+            </div>
+            <div class="flex-div justify-content-center">
+                <div class="card">
+                    <img class="card-img-top" src="images/shoes/1 (52).jpg" alt="Title" />
+                    <div class="card-body">
+                        <h5 class="card-title text-success">UrbanStroll Blue Canvas</h5>
+                        <p class="card-text text-success" style="font-weight: 800;">Price :₦ 8,350</p>
+                        <button class="btn btn-success" onclick="Cart(12, 'UrbanStroll Blue Canvas', 8350, 'shoes/1 (52).jpg')">Add To Cart</button>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <img class="card-img-top" src="images/shoes/1 (56).jpg" alt="Title" />
+                    <div class="card-body">
+                        <h5 class="card-title text-success">Sports Canvas Fashion Sneakers - Grey</h5>
+                        <p class="card-text text-success" style="font-weight: 800;">Price :₦ 5,900</p>
+                        <button class="btn btn-success"  onclick="Cart(13, 'Sports Canvas Fashion Sneakers', 5900 , 'shoes/1 (56).jpg')">Add To Cart</button>
+                    </div>
+                </div>
+    
+    
+                <div class="card">
+                    <img class="card-img-top" src="images/shoes/1 (58).jpg" alt="Title" />
+                    <div class="card-body text-success">
+                        <h5 class="card-title text-success">ADIDAS Streetcheck Cloudfoam Court Low Shoes Men</h5>
+                        <p class="card-text text-success" style="font-weight: 800;">Price :₦ 89,794</p>
+                        <button class="btn btn-success fw-bold" onclick="Cart(14, 'ADIDAS Streetcheck Cloudfoam Court Low Shoes Men', 89794, 'shoes/1 (58).jpg' )">Add To Cart</button>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <img class="card-img-top" src="images/shoes/business laptop bag.jpg" alt="Title" />
+                    <div class="card-body">
+                        <h5 class="card-title text-success">Anti Theft Business Laptop Backpack-Black</h5>
+                        <p class="card-text text-success" style="font-weight: 800;">Price :₦ 6,499</p>
+                        <button class="btn btn-success" onclick="Cart(15, 'Anti Theft Business Laptop Backpack-Black', 6499, 'shoes/business laptop bag.jpg')">Add To Cart</button>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <img class="card-img-top" src="images/shoes/plain wears.jpg" alt="Title" />
+                    <div class="card-body">
+                        <h5 class="card-title text-success">Plain Mens T-shirts Combo Of 3</h5>
+                        <p class="card-text text-success" style="font-weight: 800;">Price :₦ 8,999</p>
+                        <button class="btn btn-success" onclick="Cart(16, 'Plain Mens T-shirts', 8999, 'shoes/plain wears.jpg')">Add To Cart</button>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <img class="card-img-top" src="images/shoes/watch.jpg" alt="Title" />
+                    <div class="card-body">
+                        <h5 class="card-title text-success">Wlisth Luminous Tungsten Steel Waterproof Fashion Quartz Watch</h5>
+                        <p class="card-text text-success" style="font-weight: 800;">Price: ₦ 5,322</p>
+                        <button class="btn btn-success" onclick="Cart(17, 'Waterproof Fashion Quartz Watch', 5322, 'shoes/watch.jpg' )">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                <p style="color: white; margin-left: 50px; font-size: 30px; font-weight: bold; font-style: italic;">Top Electronics Picks::</p>
+                <p style="color: white; font-size: larger; font-weight: 700; margin-left: -10px; margin-top: 15px;" onclick="Electronics()">See All</p>
+                </div>
+                <div class="flex-div justify-content-center">
+                    <div class="card">
+                        <img class="card-img-top" src="images/electronics/1 - 2024-04-13T045636.843.jpg" alt="Title" />
+                        <div class="card-body">
+                            <h5 class="card-title text-success">DVD/Decoder Wall Shelf Cabinet Suspended Wall Decor Shelf</h5>
+                            <p class="card-text text-success" style="font-weight: 800;">Price :₦ 4,800</p>
+                            <button class="btn btn-success" onclick="Cart(18, 'Cabinet Suspended Wall Decor Shelf', 4800, 'electronics/1 - 2024-04-13T045636.843.jpg')">Add To Cart</button>
+                        </div>
+                    </div>
+        
+                    <div class="card">
+                        <img class="card-img-top" src="images/electronics/1 - 2024-04-13T045835.864.jpg" alt="Title" />
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Haier Thermocool 2.5kVA/2.0kW Petrol Electric Generator</h5>
+                            <p class="card-text text-success" style="font-weight: 800;">Price :₦ 424,070</p>
+                            <button class="btn btn-success" onclick="Cart(19, 'Petrol Electric Generator', 424070, 'electronics/1 - 2024-04-13T045835.864.jpg')">Add To Cart</button>
+                        </div>
+                    </div>
+        
+        
+                    <div class="card">
+                        <img class="card-img-top" src="images/electronics/1 - 2024-04-13T045836.535.jpg" alt="Title" />
+                        <div class="card-body text-success">
+                            <h5 class="card-title text-success">Senwei 1.8KVA Manual Start Generator</h5>
+                            <p class="card-text text-success" style="font-weight: 800;">Price :₦ 185,950</p>
+                            <button class="btn btn-success fw-bold" onclick="Cart(20, 'Manual Start Generator', 185950, 'electronics/1 - 2024-04-13T045836.535.jpg')">Add To Cart</button>
+                        </div>
+                    </div>
+        
+                    <div class="card">
+                        <img class="card-img-top" src="images/electronics/bluetooth hifi.jpg" alt="Title" />
+                        <div class="card-body">
+                            <h5 class="card-title text-success">220V/12V 600W Bluetooth HiFi Audio Stereo Power Amplifier</h5>
+                            <p class="card-text text-success" style="font-weight: 800;">Price :₦ 20,770</p>
+                            <button class="btn btn-success" onclick="Cart(21, 'Audio Stereo Power Amplifier', 20770, 'electronics/bluetooth hifi.jpg')">Add To Cart</button>
+                        </div>
+                    </div>
+        
+                    <div class="card">
+                        <img class="card-img-top" src="images/electronics/1 - 2024-04-13T045847.946.jpg" alt="Title" />
+                        <div class="card-body">
+                            <h5 class="card-title text-success">BLUETTI AC200MAX 2048Wh/2200W LiFePO4 Solar Generator</h5>
+                            <p class="card-text text-success" style="font-weight: 800;">Price :₦ 2,853,999</p>
+                            <button class="btn btn-success" onclick="Cart(22, 'LiFePO4 Solar Generator', 2853999, 'electronics/1 - 2024-04-13T045847.946.jpg')">Add To Cart</button>
+                        </div>
+                    </div>
+        
+                    <div class="card">
+                        <img class="card-img-top" src="images/electronics/1 - 2024-04-13T045855.643.jpg" alt="Title" />
+                        <div class="card-body">
+                            <h5 class="card-title text-success">BLUETTI EB150 1500Wh/1000W Portable Power Station</h5>
+                            <p class="card-text text-success" style="font-weight: 800;">Price:₦ 2,122,999</p>
+                            <button class="btn btn-success" onclick="Cart(23, 'Portable Power Station', 2122999, 'electronics/1 - 2024-04-13T045855.643.jpg')">Add To Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img class="card-img-top" src="images/electronics/1 - 2024-04-13T045910.910.jpg" alt="Title" />
+                        <div class="card-body">
+                            <h5 class="card-title text-success">BLUETTI EB70 716Wh/1000W LiFePo4 Portable Solar Generator</h5>
+                            <p class="card-text text-success" style="font-weight: 800;">Price:₦ 994,999</p>
+                            <button class="btn btn-success" onclick="Cart(24, '716Wh/1000W LiFePo4 Portable Solar Generator', 994999, 'electronics/1 - 2024-04-13T045910.910.jpg')">Add To Cart</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/13/910466/1.jpg?6806" alt="Title" />
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Energy 32" INCH HD LED ENERGY TV WITH WARRANTY</h5>
+                            <p class="card-text text-success" style="font-weight: 800;">Price :₦104,409 </p>
+                            <button class="btn btn-success" onclick="Cart(25, 'LED ENERGY TV WITH WARRANTY', 104409, '')">Add To Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img class="card-img-top" src="images/electronics/Smart_tv-1.jpg" alt="Title" />
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Infinity 32" Smart Frameless TV+Netflix,Youtube APP </h5>
+                            <p class="card-text text-success" style="font-weight: 800;">Price :₦ 129,780 </p>
+                            <button class="btn btn-success" onclick="Cart(26, 'Infinity 32 Smart Frameless TV+Netflix,Youtube APP', 129780, 'electronics/Smart_tv-1.jpg')">Add To Cart</button>
+                        </div>
+                    </div>
+
+                 
+                    
+                </div>
+                <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                    <p style="color: white; margin-left: 50px; font-size: 30px; font-weight: bold; font-style: italic;">Health And Beauty::</p>
+                    <p style="color: white; font-size: larger; font-weight: 700; margin-left: -10px; margin-top: 15px;" onclick="Healthandbeauty()">See All</p>
+                    </div>
+                    <div class="flex-div justify-content-center">
+                        <div class="card">
+                            <img class="card-img-top" src="images/health and beauty/1 (16).jpg" alt="Title" />
+                            <div class="card-body">
+                                <h5 class="card-title text-success">NIVEA Perfect & Radiant Luminous630 Anti Dark Marks Day Cream SPF50</h5>
+                                <p class="card-text text-success" style="font-weight: 800;">Price :₦ 23,995
+                                </p>
+                                <button class="btn btn-success" onclick="Cart(27, 'NIVEA Perfect & Radiant Luminous630 Cream', 23995, 'health and beauty/1 (16).jpg')">Add To Cart</button>
+                            </div>
+                        </div>
+            
+                        <div class="card">
+                            <img class="card-img-top" src="images/health and beauty/1 (24).jpg" alt="Title" />
+                            <div class="card-body">
+                                <h5 class="card-title text-success">Disaar Vitamin C Face Serum/anti-aging,sunburn & Dark Spots Removal</h5>
+                                <p class="card-text text-success" style="font-weight: 800;">Price :₦ 3,500</p>
+                                <button class="btn btn-success" onclick="Cart(28, 'Disaar Vitamin C Face Serum', 3500, 'health and beauty/1 (24).jpg')">Add To Cart</button>
+                            </div>
+                        </div>
+            
+            
+                        <div class="card">
+                            <img class="card-img-top" src="images/health and beauty/1 (25).jpg" alt="Title" />
+                            <div class="card-body text-success">
+                                <h5 class="card-title text-success">Disaar Natural Vitamin E Oil 70000 Iu   </h5>
+                                <p class="card-text text-success" style="font-weight: 800;">Price :₦ 3,500</p>
+                                <button class="btn btn-success fw-bold" onclick="Cart(29, 'Disaar Natural Vitamin E Oil', 3500, 'health and beauty/1 (25).jpg')">Add To Cart</button>
+                            </div>
+                        </div>
+            
+                        <div class="card">
+                            <img class="card-img-top" src="images/health and beauty/1 (26).jpg" alt="Title" />
+                            <div class="card-body">
+                                <h5 class="card-title text-success">NIVEA Watimagbo Pack- Perfect & Radiant Body Lotion - 400ml</h5>
+                                <p class="card-text text-success" style="font-weight: 800;">Price :₦ 10,440</p>
+                                <button class="btn btn-success" onclick="Cart(30, 'NIVEA Watimagbo Pack- Perfect & Radiant Body Lotion', 10440, 'health and beauty/1 (26).jpg')">Add To Cart</button>
+                            </div>
+                        </div>
+            
+                        <div class="card">
+                            <img class="card-img-top" src="images/health and beauty/1 (27).jpg" alt="Title" />
+                            <div class="card-body">
+                                <h5 class="card-title text-success">Cerave Acne Control Cleanser With 2% Salicylic Acid 237ml</h5>
+                                <p class="card-text text-success" style="font-weight: 800;">Price :₦ 4,450</p>
+                                <button class="btn btn-success" onclick="Cart(31, 'Cerave Acne Control Cleanser With 2% Salicylic Acid', 4450, 'health and beauty/1 (27).jpg')">Add To Cart</button>
+                            </div>
+                        </div>
+            
+                        <div class="card">
+                            <img class="card-img-top" src="images/health and beauty/1 (28).jpg" alt="Title" />
+                            <div class="card-body">
+                                <h5 class="card-title text-success">Biore UV Aqua Rich Watery Essence Sunscreen SPF 50ml</h5>
+                                <p class="card-text text-success" style="font-weight: 800;">Price :₦ 3,850</p>
+                                <button class="btn btn-success" onclick="Cart(32, 'Biore UV Aqua Rich Watery Essence Sunscreen SPF', 3850,'health and beauty/1 (28).jpg' )">Add To Cart</button>
+                            </div>
+                        </div>
+    
+
+    </div>
+
+    <div class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h1>Legacy Shopping</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sollicitudin rutrum massa. Suspendisse sollicitudin rutrum massa. Vestibulum porttitor, metus sed pretium elementum, nisi nibh sodales quam, non lobortis neque felis id mauris.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h3 class="title">Useful Pages</h3>
+                        <ul>
+                            <li><a href="#product">Product</a></li>
+                            <li><a href="cart.html">Cart</a></li>
+                            <li><a href="login.html">Login & Register</a></li>
+                            <li><a href="account.html">My Account</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h3 class="title">Quick Links</h3>
+                        <ul>
+                            <li><a href="#product">Product</a></li>
+                            <li><a href="cart.html">Cart</a></li>
+                            <li><a href="login.html">Login & Register</a></li>
+                            <li><a href="account.html">My Account</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h3 class="title">Get in Touch</h3>
+                        <div class="contact-info">
+                            <p><i class="fa fa-map-marker"></i>123 Legacy Shopping, Ogbomoso, Oyo State, Nigeria</p>
+                            <p><i class="fa fa-envelope"></i>ademolaelisha123@gmail.com</p>
+                            <p><i class="fa fa-phone"></i>+234-913-906-3696</p>
+                            <div class="social">
+                                <a href=""><i class="fa fa-twitter"></i></a>
+                                <a href=""><i class="fa fa-facebook"></i></a>
+                                <a href=""><i class="fa fa-linkedin"></i></a>
+                                <a href=""><i class="fa fa-instagram"></i></a>
+                                <a href=""><i class="fa fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row payment">
+                <div class="col-md-6">
+                    <div class="payment-method">
+                        <p>We Accept:</p>
+                        <img src="images/payment-method.png" alt="Payment Method" />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="payment-security">
+                        <p>Secured By:</p>
+                        <img src="images/godaddy.svg" width="50px" alt="Payment Security" />
+                        <img src="images/norton.svg" width="50px" alt="Payment Security" />
+                        <img src="images/ssl.svg" width="50px" alt="Payment Security" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+        
+
+    <script src="./bootstrap.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

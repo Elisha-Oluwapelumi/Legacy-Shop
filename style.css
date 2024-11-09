@@ -1,0 +1,290 @@
+body {
+    background-color: goldenrod ;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.generaldiv {
+    background-color: wheat;
+    width: 97vmax ;
+    height: 97vh;
+    border-radius: 5px;
+    margin-top: 9px;
+    margin-left: 19px;
+    overflow: scroll;
+}
+
+.navbar-brand {
+    font-size: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+    font-style: oblique;
+    color: whitesmoke;
+}
+
+.legacy {
+    font-size: 20px;
+    font-weight: 200;
+    font-family: fantasy;
+    color: goldenrod;
+}  
+.legacy2 {
+    font-size: 20px;
+    font-weight: 200;
+    font-family: fantasy;
+    color: white;
+}  
+.nav-link {
+    color: white !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+    margin-top: 20px;
+    margin-left: 110px;
+}
+
+.navbar-brand:hover {
+    color: whitesmoke;
+}
+
+#form {
+    margin-top: 20px !important;
+    margin-left: 60px !important;
+}
+
+.advert {
+    background-color: blanchedalmond;
+    width: 80vmax;
+    height: 200px;
+    border-radius: 5px;
+    margin-left: 98px;
+}
+
+.adverflexdiv {
+    display: flex;
+    flex-direction: row;
+}
+
+.advertdiv1 {
+    flex: 0 0 60% !important;
+    max-width: 60% !important;
+}
+
+.advertdiv2 {
+    flex: 0 0 40% !important;
+    max-width: 40% !important;
+}
+
+.advertdiv1 p {
+    color: darkolivegreen;
+    font-size: 30px;
+    font-weight: 800;
+    margin-left: 20px;
+}
+
+.advertdiv1 button {
+    width: 140px;
+} 
+
+
+.flex-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-left: 0;
+}
+
+.card {
+    width: 30%;
+}
+
+.card button {
+    background-color: orange;
+}
+
+
+@media screen and (max-width:500px) {
+    .advert {
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    .generaldiv {
+        
+        height: 100% !important;
+    }
+
+    .card {
+        width: 40%;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px; 
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: wheat; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #FFD700;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #FFD700; 
+  }
+
+  
+::-webkit-scrollbar-corner {
+    background: wheat; 
+
+}
+  
+
+.footer {
+    position: relative;
+    padding: 60px 0 0 0;
+    background: #423f2e;
+    margin-top: 30px;
+}
+
+@media (min-width: 992px) {
+    .footer .container-fluid {
+        max-width: 95%;
+    }
+}
+
+.footer .footer-widget {
+    position: relative;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.footer .footer-widget h1 {
+    color: #ffffff;
+    margin-bottom: 18px; 
+}
+
+.footer .footer-widget .title {
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+.footer .footer-widget p {
+    color: #ffffff;
+}
+
+.footer .footer-widget ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer .footer-widget ul li {
+    margin-bottom: 12px; 
+}
+
+.footer .footer-widget ul li:last-child {
+    margin-bottom: 0; 
+}
+
+.footer .footer-widget ul li a {
+    color: #ffffff;
+    white-space: nowrap;
+    display: block;
+    line-height: 23px;
+}
+
+.footer .footer-widget ul li a::before {
+    content: '\f061';
+    font-family: 'FontAwesome';
+    padding-right: 5px;
+}
+
+.footer .footer-widget ul li a:hover {
+    padding-left: 10px; 
+}
+
+.footer .contact-info p {
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.footer .contact-info p i {
+    color: #ffffff;
+    margin-right: 5px;
+}
+
+.footer .social {
+    position: relative;
+    width: 100%;
+}
+
+.footer .social a {
+    display: inline-block;
+    margin: 10px 5px 0 0;
+    width: 35px;
+    height: 35px;
+    padding: 2px 0;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #ffffff;
+}
+
+.footer .social a i {
+    color: #ffffff;
+}
+
+.footer .payment {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-top: 1px solid #4977bf;
+}
+
+@media (min-width: 992px) {
+    .footer .payment {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+
+.footer .payment-method,
+.footer .payment-security {
+    overflow: hidden;
+}
+
+.footer .payment-method {
+    text-align: left;
+}
+
+.footer .payment-security {
+    text-align: right;
+}
+
+@media (max-width: 768.98px) {
+    .footer .payment-method,
+    .footer .payment-security {
+        text-align: center; 
+    } 
+}
+
+.footer .payment-method p,
+.footer .payment-security p{
+    display: inline-block;
+    margin: 0 10px 0 0;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.footer .payment-method img,
+.footer .payment-security img {
+    height: 25px;
+}

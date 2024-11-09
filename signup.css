@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: blueviolet;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-div {
+ display: flex;
+ flex-direction: row;
+}
+
+.first-flex {
+    flex: 0 0 45%;
+    max-width: 45%;
+}
+
+img {
+    padding: 110px;
+    height: 440px;
+    width: 80%;
+}
+
+.second-flex {
+    flex: 0 0 55%;
+    max-width: 55%;
+}
+
+.signup {
+    color: red;
+    font-size: 45px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: cursive;
+    margin-top: 90px;
+    margin-left: 190px;
+}
+
+.form {
+    /* margin-top: 20%; */
+    margin-left: 50px;
+}
+
+input {
+    border: none;
+    width: 70%;
+    height: 38px;
+    border-radius: 12px;
+    margin-top: 25px;
+}
+
+input::placeholder {
+    text-align: left;
+    padding-left: 10px;
+}
+
+input:focus {
+outline: none;
+}
+
+.btn {
+    margin-top: 20px;
+    width: 70%;
+    border-radius: 15px;
+    border: none;
+    height: 40px;
+    background-color: coral;
+    color: wheat;
+}
+
+.btn:hover {
+    background-color: darkgoldenrod;
+    transition: 2s;
+}
+
+@media screen and (max-width:500px) {
+
+    body {
+        background-image: url(images/FB_IMG_17110111112670683.jpg);
+    }
+    .flex-div {
+        flex-direction: column;
+    }
+
+    .signup {
+        width: 100%;
+        margin: 0;
+        padding-left: 48px;
+    }
+
+    input {
+        width: 250px;
+    }
+
+    i
+
+    .btn {
+        width: 250px;
+        color: white;
+    }
+
+    img {
+        display: none;
+    }
+
+    .login {
+        width: 290px;
+        color: white;
+    }
+}
