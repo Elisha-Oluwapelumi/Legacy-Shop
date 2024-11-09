@@ -10,7 +10,7 @@ function login() {
     let userFound = false; 
 
     for (let index = 0; index < retrievedObj.length; index++) {
-        if (retrievedObj[index].firstname === inputone && retrievedObj[index].phone === inputtwo && retrievedObj[index].password === inputthree) {
+        if (retrievedObj[index].firstname === inputone && retrievedObj[index].email === inputtwo && retrievedObj[index].password === inputthree) {
             userFound = true;
             localStorage.setItem('currentUser', index)
             break; 

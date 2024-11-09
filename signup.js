@@ -9,8 +9,9 @@ function create() {
     let inputthree = document.getElementById('inputthree')
     let inputfour = document.getElementById('inputfour')
     let inputfive = document.getElementById('inputfive')
+    let email = document.getElementById('email')
 
-    if (inputone.value == '' || inputtwo.value == '' || inputthree.value == '') {
+    if (inputone.value == '' || inputtwo.value == '' || inputthree.value == '' || email.value == '' ) {
         alert('Spaces Cannot be Empty')
     } else if (inputfour.value !== inputfive.value) {
         alert('Password Mismatch')
@@ -21,6 +22,7 @@ function create() {
             lastname:inputtwo.value,
             phone:inputthree.value,
             password:inputfour.value,
+            email:email.value
         }
         usersignupDetails.push(obj)
         console.table(usersignupDetails)
